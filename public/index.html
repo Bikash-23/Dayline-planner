@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <title>Dayline — make room for what matters</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <aside class="rail"><a class="logo" href="/" aria-label="Dayline home">d<span>.</span></a><div class="rail-icon active" aria-label="Tasks">▤</div><div class="rail-bottom">✳</div></aside>
+    <section class="workspace">
+      <header><div class="wordmark">dayline <span>PERSONAL PLANNER</span></div><div class="today" id="today"></div></header>
+      <section class="welcome"><div class="sun">☼</div><p class="overline">A LITTLE CLARITY GOES A LONG WAY</p><h1>Make room for<br><em>what matters.</em></h1><p class="sub">One step at a time. Keep your day moving at your own pace.</p></section>
+      <section class="planner" aria-label="Task planner">
+        <div class="section-head"><div><p class="overline">YOUR FOCUS</p><h2>Today’s list <span id="count" class="count">0</span></h2></div><div class="filters" role="group" aria-label="Filter tasks"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="open">Open</button><button class="filter" data-filter="done">Done</button></div></div>
+        <form id="task-form" class="add-form"><span class="plus">＋</span><input id="task-input" maxlength="120" placeholder="Add something you want to get done…" autocomplete="off" aria-label="New task"><button type="submit">Add task <span>↗</span></button></form>
+        <ul id="task-list" class="task-list"></ul>
+        <div id="empty" class="empty"><div>✳</div><strong>A clear page is a good start.</strong><span>Add your first task above.</span></div>
+        <p id="notice" class="notice" role="status"></p>
+      </section>
+      <footer><span>Small steps count.</span><span>DAYLINE <b>✳</b></span></footer>
+    </section>
+    <aside class="quote"><div class="quote-art">✳</div><div class="quote-copy"><span>THE DAILY NOTE</span><p>“You don’t have to see the whole staircase. Just take the first step.”</p><small>— MARTIN LUTHER KING JR.</small></div><div class="quote-date" id="date-card"></div></aside>
+  </main>
+</body>
+</html>
